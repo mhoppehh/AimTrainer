@@ -8,7 +8,6 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 
-import javax.swing.*;
 import java.awt.*;
 public class Display implements ActionListener, MouseListener
 {
@@ -30,7 +29,7 @@ public class Display implements ActionListener, MouseListener
         int height = (int)(screenSize.getHeight() * 0.5);
 
         j.setSize(width, height);
-        j.setDefaultCloseOperation(j.EXIT_ON_CLOSE);
+        j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     private void init_ui(){
@@ -52,7 +51,7 @@ public class Display implements ActionListener, MouseListener
         j.getContentPane().add(btn_pnl);
         //j.setResizable(true);
         j.setVisible(true);
-        j.setDefaultCloseOperation(j.EXIT_ON_CLOSE);
+        j.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public void actionPerformed(ActionEvent e) {
